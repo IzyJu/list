@@ -1,0 +1,24 @@
+
+namespace ConsoleApp12
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> theChar = new List<string>();
+
+            theChar.Add("salut,");
+            theChar.Add("je m'appelle");
+            theChar.Add("la liste");
+
+            theChar.RemoveAt(0);
+            theChar.Remove("la liste");
+            theChar[0] = " changement";
+            
+            foreach (string chars in theChar)
+            {
+                Console.WriteLine(chars);
+            }
+        }
+    }
+}
